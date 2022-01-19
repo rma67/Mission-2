@@ -6,9 +6,11 @@
     let exams = $("#txtExams").val();
     let intex = $("#txtIntex").val();
 
-   // let totalGrades = parseFloat(assignments) + parseFloat(groupProject) + parseFloat(quizzes) + parseFloat(exams) + parseFloat(intex)
+     //let totalGrades = parseFloat(assignments) + parseFloat(groupProject) + parseFloat(quizzes) 
+     //+ parseFloat(exams) + parseFloat(intex)
 
-    percentage = (parseFloat(assignments)*0.55) + (parseFloat(groupProject)*0.05) + (parseFloat(quizzes)*0.1) + (parseFloat(exams)*0.20) + (parseFloat(intex)*0.1)
+    percentage = (parseFloat(assignments) * 0.55) + (parseFloat(groupProject) * 0.05) + (parseFloat(quizzes) * 0.1)
+        + (parseFloat(exams) * 0.20) + (parseFloat(intex) * 0.1)
 
     if (percentage <= 100 && percentage >= 94) {
         grades = "A";
